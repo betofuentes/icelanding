@@ -6,11 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICE-LANDING</title>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="index.js"></script>
+    <script src="./js/index.js"></script>
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
-    <form method="post">
+    <form name="data" method="post">
+        <section>
+            <h2>Información de contacto</h2>
+  
+            <p>
+            <label for="name">
+                <span>Nombre </span>
+                <strong><abbr title="required"></abbr></strong>
+            </label>
+
+            <input type="text" id="name" name="username">
+
+            </p>
+            <p>
+            <label for="client_email">
+                <span>Correo electrónico </span>
+                <strong><abbr title="required"></abbr></strong>
+            </label>
+            
+            <input type="email" id="client_email" name="usermail">
+
+            </p>
+            <p>
+            <label for="body">
+                <span>¿Qué es lo que deseas comentar?</span>
+                <strong><abbr title="required"></abbr></strong>
+            </label>
+            <br>
+
+            <textarea id="body" name="comentarios" rows="5" cols="60"></textarea>
+
+            </p>
+        </section>
+
+        <fieldset>
+            <legend>Razón de contacto</legend>
+            <ul type="none">
+                <li>
+                    <label for="R1">
+                    <input type="radio" id="id_razon" name="razon" value="R1" >
+                    Compra
+                    </label>
+                </li>
+                <li>
+                    <label for="R2">
+                    <input type="radio" id="id_razon" name="razon" value="R2">
+                    Dudas
+                    </label>
+                </li>
+                <li>
+                    <label for="R3">
+                    <input type="radio" id="id_razon" name="razon" value="R3">
+                    Reclamos
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
         <input type="button" value="Enviar correo" onclick="sendEmail()" />
     </form>
 </body>
