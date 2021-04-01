@@ -19,29 +19,33 @@
                 <span>Nombre </span>
                 <strong><abbr title="required"></abbr></strong>
             </label>
-
-            <input type="text" id="name" name="username">
-
+            <input type="text" id="name" name="username" required>
             </p>
+
             <p>
             <label for="client_email">
                 <span>Correo electrónico </span>
                 <strong><abbr title="required"></abbr></strong>
             </label>
-            
-            <input type="email" id="client_email" name="usermail">
-
+            <input type="email" id="client_email" name="client_mail">
             </p>
+
+            <p>
+            <label for="client_number">
+                <span>Número de contacto </span>
+                <strong><abbr title="required"></abbr></strong>
+            </label>
+            <input type="email" id="client_number" name="client_number" maxlength="11">
+            </p>
+
             <p>
             <label for="body">
                 <span>¿Qué es lo que deseas comentar?</span>
-                <strong><abbr title="required"></abbr></strong>
             </label>
             <br>
-
-            <textarea id="body" name="comentarios" rows="5" cols="60"></textarea>
-
+            <textarea id="body" name="comentarios" rows="5" cols="60" required></textarea>
             </p>
+
         </section>
 
         <fieldset>
@@ -49,25 +53,25 @@
             <ul type="none">
                 <li>
                     <label for="R1">
-                    <input type="radio" id="id_razon" name="razon" value="R1" >
-                    Compra
+                    <input type="radio" id="id_razon" name="razon" value="COTIZACIÓN" >
+                    Cotización
                     </label>
                 </li>
                 <li>
                     <label for="R2">
-                    <input type="radio" id="id_razon" name="razon" value="R2">
-                    Dudas
+                    <input type="radio" id="id_razon" name="razon" value="INFORMES">
+                    Informes
                     </label>
                 </li>
                 <li>
                     <label for="R3">
-                    <input type="radio" id="id_razon" name="razon" value="R3">
-                    Reclamos
+                    <input type="radio" id="id_razon" name="razon" value="QUEJA">
+                    Quejas
                     </label>
                 </li>
             </ul>
         </fieldset>
-        <input type="button" value="Enviar correo" onclick="sendEmail()" />
+        <input type="button" value="Enviar correo" onclick="check_email(document.data.client_mail)" />
     </form>
 </body>
 </html>
