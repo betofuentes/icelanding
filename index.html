@@ -8,6 +8,48 @@
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
-    
+    <header>
+        <nav class="topnav">
+            <div class="nav-left">
+                <figure class="logo">
+                    <img src="https://static1.abc.es/media/201210/27/hielo--644x400.jpg" alt="Logo_Hielo">
+                </figure>
+            </div>
+            <!-- Navigation links -->
+            <div class="nav-right">
+                <ul class="nav-right--item" id="myLinks">
+                    <li class="nav-item--link"><a href="#">Inicio</a></li>
+                    <li class="nav-item--link"><a href="#">Productos</a></li>
+                    <li class="nav-item--link"><a href="#">Pedidos</a></li>
+                    <li class="nav-item--link"><a href="#">Contacto</a></li>
+                </ul>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="bars-solid"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="intro"></section>
+        <section class="products"></section>
+        <section class="orders">
+            <!-- <p>Pedidos al</p>
+            <h1>(81)0000-0000 y (81)0000-0000</h1>
+            <p>Llamanos!</p> -->
+        </section>
+        <section class="order-form"></section>
+    </main>
+    <footer></footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block"){
+                 x.style.display = "none";
+                 } else {
+                  x.style.display = "block";
+                }
+            }
+    </script>
 </body>
 </html>

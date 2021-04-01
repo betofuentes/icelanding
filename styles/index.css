@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    width: 100vw;
+}
+
+.topnav {
+    background-color: #6495ed;
+}
+
+.logo img{
+    padding: 5px 0 0 5px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
+
+.nav-right--item{
+    list-style: none;
+    width: 90%;
+}
+
+.nav-item--link:hover{
+    background-color: #4e6fad;
+}
+
+.nav-item--link a{
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.topnav a.icon {
+    margin: 5px 5px 0 0;
+    width: 40px;
+    height: 40px;
+    background-color: #5b82c9;
+    background-image: url("../assets/icons/bars-solid.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 2px;
+}
+  
