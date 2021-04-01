@@ -8,70 +8,135 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./js/index.js"></script>
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form name="data" method="post">
-        <section>
-            <h2>Información de contacto</h2>
-  
-            <p>
-            <label for="name">
-                <span>Nombre </span>
-                <strong><abbr title="required"></abbr></strong>
-            </label>
-            <input type="text" id="name" name="username" required>
-            </p>
+   
+    <header>
+        <nav class="topnav">
+            <div class="nav-left">
+                <figure class="logo">
+                    <img src="./assets/icons/slogo.png" alt="Logo_Hielo">
+                </figure>
+            </div>
+            <!-- Navigation links -->
+            <div class="nav-right">
+                <ul class="nav-right--item" id="myLinks">
+                    <li class="nav-item--link"><a href="#Intro">Inicio</a></li>
+                    <li class="nav-item--link"><a href="#Products">Productos</a></li>
+                    <li class="nav-item--link"><a href="#">Pedidos</a></li>
+                    <li class="nav-item--link"><a href="#">Contacto</a></li>
+                </ul>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="bars-solid"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
 
-            <p>
-            <label for="client_email">
-                <span>Correo electrónico </span>
-                <strong><abbr title="required"></abbr></strong>
-            </label>
-            <input type="email" id="client_email" name="client_mail">
-            </p>
-
-            <p>
-            <label for="client_number">
-                <span>Número de contacto </span>
-                <strong><abbr title="required"></abbr></strong>
-            </label>
-            <input type="email" id="client_number" name="client_number" maxlength="11">
-            </p>
-
-            <p>
-            <label for="body">
-                <span>¿Qué es lo que deseas comentar?</span>
-            </label>
-            <br>
-            <textarea id="body" name="comentarios" rows="5" cols="60" required></textarea>
-            </p>
-
+    <main>
+        <section id ="Intro" class="intro">
+            <img src="./assets/icons/logo.png" alt="Logo">
+            <h1>Somos el distribuidor de hielo número uno cuando de festivales y conciertos se trata.</h1>
+            <p>Contamos con mas de X años de experiencia distribuyendo hielo a los principales eventos músicales en Monterrey.</p>
         </section>
+        <section id="Products" class="main-product-detail">
+            <div class="product-detail--title">
+                <h2>Manejamos productos de calidad.</h2>
+                <p>Confiables para consumo humano y enfriamiento de bebidas.</p>
+            </div>
+            <section class="product-cards--container">
+                <article class="product-detail--card">
+                    <span class="product-detail--image"></span>
+                    <p class="product-detail--card-title"></p>
+                    <p class="product-detail--card-body"></p>
+                </article>
+            </section>
+        </section>
+        <section class="orders">
+            <!-- <p>Pedidos al</p>
+            <h1>(81)0000-0000 y (81)0000-0000</h1>
+            <p>Llamanos!</p> -->
+        </section>
+        <section class="order-form">
+            <form name="data" method="post">
+                <section>
+                    <h2>Información de contacto</h2>
+        
+                    <p>
+                    <label for="name">
+                        <span>Nombre </span>
+                        <strong><abbr title="required"></abbr></strong>
+                    </label>
+                    <input type="text" id="name" name="username" required>
+                    </p>
 
-        <fieldset>
-            <legend>Razón de contacto</legend>
-            <ul type="none">
-                <li>
-                    <label for="R1">
-                    <input type="radio" id="id_razon" name="razon" value="COTIZACIÓN" >
-                    Cotización
+                    <p>
+                    <label for="client_email">
+                        <span>Correo electrónico </span>
+                        <strong><abbr title="required"></abbr></strong>
                     </label>
-                </li>
-                <li>
-                    <label for="R2">
-                    <input type="radio" id="id_razon" name="razon" value="INFORMES">
-                    Informes
+                    <input type="email" id="client_email" name="client_mail">
+                    </p>
+
+                    <p>
+                    <label for="client_number">
+                        <span>Número de contacto </span>
+                        <strong><abbr title="required"></abbr></strong>
                     </label>
-                </li>
-                <li>
-                    <label for="R3">
-                    <input type="radio" id="id_razon" name="razon" value="QUEJA">
-                    Quejas
+                    <input type="email" id="client_number" name="client_number" maxlength="11">
+                    </p>
+
+                    <p>
+                    <label for="body">
+                        <span>¿Qué es lo que deseas comentar?</span>
                     </label>
-                </li>
-            </ul>
-        </fieldset>
-        <input type="button" value="Enviar correo" onclick="check_email(document.data.client_mail)" />
-    </form>
+                    <br>
+                    <textarea id="body" name="comentarios" rows="5" cols="60" required></textarea>
+                    </p>
+
+                </section>
+
+                <fieldset>
+                    <legend>Razón de contacto</legend>
+                    <ul type="none">
+                        <li>
+                            <label for="R1">
+                            <input type="radio" id="id_razon" name="razon" value="COTIZACIÓN" >
+                            Cotización
+                            </label>
+                        </li>
+                        <li>
+                            <label for="R2">
+                            <input type="radio" id="id_razon" name="razon" value="INFORMES">
+                            Informes
+                            </label>
+                        </li>
+                        <li>
+                            <label for="R3">
+                            <input type="radio" id="id_razon" name="razon" value="QUEJA">
+                            Quejas
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <input type="button" value="Enviar correo" onclick="check_email(document.data.client_mail)" />
+            </form>
+        </section>
+    </main>
+
+    <footer></footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block"){
+                 x.style.display = "none";
+                 } else {
+                  x.style.display = "block";
+                }
+            }
+    </script>
 </body>
 </html>

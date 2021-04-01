@@ -1,0 +1,146 @@
+:root {
+    /*Colores*/
+    --azulito: #71a0b0;
+    --blanquito: #ccd7dc;
+    --warm-black: #201E1C;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    min-width: 320px
+}
+
+.topnav {
+    background-color: var(--azulito);
+}
+
+.logo img{
+    padding: 5px 0 0 5px;
+    width: 120px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
+
+.nav-right--item{
+    display: flex;
+    list-style: none;
+    width: 90%;
+    
+}
+
+.nav-item--link:hover{
+    background-color: #365964 ;
+}
+
+.nav-item--link{
+    margin: 0 auto;
+}
+
+.nav-item--link a{
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.topnav a.icon {
+    margin: 5px 5px 0 0;
+    width: 45px;
+    height: 40px;
+    background-image: url("../assets/icons/list.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 2px;
+    box-shadow: 0px 3px rgba(38, 79, 133, 0.16);
+}
+  
+.intro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(207.8deg, var(--blanquito) 16.69%, var(--azulito) 100%);
+}
+
+.intro img{
+    width: 130px;
+}
+.intro h1 {
+    width: 95%;
+    padding: 10px;
+    margin: 0 auto;
+    align-self: center;
+    color: #303030;
+    font-weight: bold;
+    font-size: 2.4rem;
+    border-radius: 10px;
+    box-shadow: 1px 5px 50px rgba(43, 45, 75,0.25);
+}
+
+.intro p{
+    padding: 10px auto;
+    font-size: 1.4rem;
+}
+
+.main-product-detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--warm-black);
+}
+
+.product-detail--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;/*El mismo texto delimita el crecimiento*/
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.product-detail--title h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: white;
+}
+
+.product-detail--title p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
