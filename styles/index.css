@@ -2,6 +2,7 @@
     /*Colores*/
     --azulito: #71a0b0;
     --blanquito: #ccd7dc;
+    --warm-black: #201E1C;
 }
 
 * {
@@ -98,6 +99,7 @@ header {
     margin: 0 auto;
     align-self: center;
     color: #303030;
+    font-weight: bold;
     font-size: 2.4rem;
     border-radius: 10px;
     box-shadow: 1px 5px 50px rgba(43, 45, 75,0.25);
@@ -106,4 +108,38 @@ header {
 .intro p{
     padding: 10px auto;
     font-size: 1.4rem;
+}
+
+.main-product-detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--warm-black);
+}
+
+.product-detail--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;/*El mismo texto delimita el crecimiento*/
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.product-detail--title h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: white;
+}
+
+.product-detail--title p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
 }
