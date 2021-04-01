@@ -14,10 +14,12 @@
 html {
     font-family: 'DM Sans', sans-serif;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 header {
-    width: 100vw;
+    width: 100%;
+    min-width: 320px
 }
 
 .topnav {
