@@ -1,3 +1,9 @@
+:root {
+    /*Colores*/
+    --azulito: #71a0b0;
+    --blanquito: #ccd7dc;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -13,7 +19,7 @@ header {
 }
 
 .topnav {
-    background-color: #6495ed;
+    background-color: var(--azulito);
 }
 
 .logo img{
@@ -34,12 +40,18 @@ header {
 }
 
 .nav-right--item{
+    display: flex;
     list-style: none;
     width: 90%;
+    
 }
 
 .nav-item--link:hover{
-    background-color: #4e6fad;
+    background-color: #365964 ;
+}
+
+.nav-item--link{
+    margin: 0 auto;
 }
 
 .nav-item--link a{
@@ -50,9 +62,10 @@ header {
 
 .topnav a.icon {
     margin: 5px 5px 0 0;
+    padding: 5px;
     width: 40px;
     height: 40px;
-    background-color: #5b82c9;
+    background-color: var(--azulito);
     background-image: url("../assets/icons/bars-solid.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,3 +76,12 @@ header {
     border-radius: 2px;
 }
   
+.intro {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(207.8deg, var(--blanquito) 16.69%, var(--azulito) 100%);
+}
