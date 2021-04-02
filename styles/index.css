@@ -144,3 +144,158 @@ header {
     line-height: 1.8rem;
     color: #808080;
 }
+.contacto {
+    position: relative;
+    min-height: 200px;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contacto .contenido {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contacto .contenido h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+.contacto .contenido p {
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+
+.contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor .contactoInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor .contactoInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contenedor .contactoInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.contenedor .contactoInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contenedor .contactoInfo .box .text h3{
+    font-weight: 300;
+    color: var(--azulito);
+}
+
+.order-form {
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+
+.order-form h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.order-form .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.order-form .inputBox input, .order-form .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+    font-family: 'DM Sans';
+}
+
+.order-form .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.order-form .inputBox input:focus::placeholder,
+.order-form .inputBox textarea:focus::placeholder {
+    color: var(--azulito);
+    font-size: 12px;
+    transition: 0.5s;
+}
+
+button {
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 19px;
+    margin-top: 10px;
+    display: block;
+    float: right;
+}
+/*
+.select {
+    width: auto;
+    border: 1px solid #3F51B5;
+    border-radius: 3px;
+    padding: 3px 5px;
+    font-size: 15px;
+    cursor: pointer;
+    line-height: 1.1;
+    display: grid;
+}
+
+
+button {
+    appearance:none;
+    -webkit-appearance:none;
+    padding:10px;
+    border:none;
+    background-color:#3F51B5;
+    color:#fff;
+    font-weight:600;
+    border-radius:5px;
+    width:50%;
+    margin-left: right;
+}

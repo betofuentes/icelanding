@@ -9,7 +9,7 @@
 		return true;	
 	 }
  }
-  
+
  function sendEmail() {
 	var name = document.getElementById("name").value;
 	var client_email = document.getElementById("client_email").value;

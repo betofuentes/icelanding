@@ -61,71 +61,73 @@
             <p>Llamanos!</p> -->
         </section>
 
-        <section class="order-form">
-            <form name="data" method="post">
-                <section>
-                    <h2>Información de contacto</h2>
-        
-                    <p>
-                    <label for="name">
-                        <span>Nombre </span>
-                        <strong><abbr title="required"></abbr></strong>
-                    </label>
-                    <input type="text" id="name" name="username" required>
-                    </p>
+        <section class="contacto">
+            <div class="contenido">
+                <h2>¡Contáctanos!</h2>
+                <p>Estaremos contentos de ponernos en contacto contigo brevemente. Estás en buenas manos.</p>
+            </div>
+            <div class="contenedor">
+                <div class="contactoInfo">
+                    <div class="box">
+                        <div class="icon"></div>
+                        <div class="text">
+                            <h3>Dirección</h3>
+                            <p>Nombre de la calle</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"></div>
+                        <div class="text">
+                            <h3>Teléfono</h3>
+                            <p>Número de teléfono</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"></div>
+                        <div class="text">
+                            <h3>Correo</h3>
+                            <p>Nombre del correo</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="order-form">
+                        <form name="data" method="post">
+                            <h2>Información de contacto</h2>
 
-                    <p>
-                    <label for="client_email">
-                        <span>Correo electrónico </span>
-                        <strong><abbr title="required"></abbr></strong>
-                    </label>
-                    <input type="email" id="client_email" name="client_mail">
-                    </p>
-
-                    <p>
-                    <label for="client_number">
-                        <span>Número de contacto </span>
-                        <strong><abbr title="required"></abbr></strong>
-                    </label>
-                    <input type="email" id="client_number" name="client_number" maxlength="11">
-                    </p>
-
-                    <p>
-                    <label for="body">
-                        <span>¿Qué es lo que deseas comentar?</span>
-                    </label>
-                    <br>
-                    <textarea id="body" name="comentarios" rows="5" cols="60" required></textarea>
-                    </p>
-
-                </section>
-
-                <fieldset>
-                    <legend>Razón de contacto</legend>
-                    <ul type="none">
-                        <li>
-                            <label for="R1">
-                            <input type="radio" id="id_razon" name="razon" value="COTIZACIÓN" >
-                            Cotización
+                            <label for="name" class="inputBox">
+                                <input type="text" id="name" name="username" required="required" placeholder="Nombre">
+                               
                             </label>
-                        </li>
-                        <li>
-                            <label for="R2">
-                            <input type="radio" id="id_razon" name="razon" value="INFORMES">
-                            Informes
+
+                            <label for="client_email" class="inputBox">
+                                <input type="email" id="client_email" name="client_mail" placeholder="Correo electrónico ">
                             </label>
-                        </li>
-                        <li>
-                            <label for="R3">
-                            <input type="radio" id="id_razon" name="razon" value="QUEJA">
-                            Quejas
+
+
+                            <label for="client_number" class="inputBox">
+                                <input type="text" id="client_number" name="client_number" maxlength="11" placeholder="Número de contacto">
                             </label>
-                        </li>
-                    </ul>
-                </fieldset>
-                <input type="button" value="Enviar correo" onclick="check_email(document.data.client_mail)" />
-            </form>
+
+                            <label for="body" class="inputBox">
+                                <textarea id="body" name="comentarios" rows="5" cols="60" required placeholder="¿Qué es lo que deseas comentar?"></textarea>
+                            </label>
+
+                            <label for="razon" >
+                                <span>Razón de contacto</span>
+                                <select class="select" name="razon" id="id_razon">
+                                    <option value="COTIZACIÓN">Cotización</option>
+                                    <option value="INFORMES">Informes</option>
+                                    <option value="QUEJA">Quejas</option>
+                                </select>
+                            </label>
+                            <button type="button" value="Enviar " onclick="check_email(document.data.client_mail)">Enviar</button>
+                        </form>
+                    </div>
+                
+            </div>
+
         </section>
+
     </main>
 
     <footer></footer>
