@@ -108,12 +108,17 @@ header {
 }
 
 .intro button{
-    top: 380px;
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 19px;
     position: absolute;
     left: calc(50% - 125px);
     width: 250px;
-    margin-top: auto 10px auto 10px;
-    padding: 15px 0 15px 0;
+    top: 400px;
+    padding: 15px 10px 15px 10px;
     border-radius: 5px;
     box-shadow: 1px 5px 10px rgb(6, 28, 56);
     transition: .5s;
@@ -341,12 +346,13 @@ header {
  .modal-body{
      position: relative;  
      text-align: center;
+     margin: 10px 0 10px 0;
 }
 
  .modal-body img{
-    width: 80px;
+    width: 70px;
+    margin: 8px;
  }
-
 
 
 /* SECONDARY CONTAINER */
