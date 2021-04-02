@@ -263,6 +263,87 @@ header {
     width: 110px;
     padding: 0px 5px 15px 5px;
 }
+ 
+ .proofs button{
+     margin: 20px;
+     padding: 10px 5px 10px 5px;
+     border-radius: 7px;
+     color: white;
+     background-color: var(--warm-black);
+     border-style: none;
+     cursor: pointer;
+     transition-duration: .5s;
+ }
+
+ .proofs button:hover{
+     background-color: #666;
+ }
+
+ /* MODAL */
+.flex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+ }
+ 
+ .modal{
+     display: none;
+     position: fixed;
+     z-index:1;
+     overflow: auto;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.452);
+ }
+ 
+ .modal-content{
+     position: relative;
+     background-color: white;
+     margin: auto;
+     width: 90%;
+     height: auto;
+     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 4);
+     animation-name: modal;
+     animation-duration: 1s;
+ }
+ 
+ @keyframes modal {
+     from{top: -330px; opacity: 0;}
+     to{top:0; opacity: 1;}
+ }
+ 
+ .modal-header{
+  background-color: #6ebed6;
+ }
+
+ .modal-header h3{
+     margin-left: 10px;
+     color: white;
+     font-size: 1.7rem;
+ }
+ 
+ .modal-header__close{
+    color: white;
+     font-weight: bold;
+     font-size: 2.7rem;
+     cursor: pointer;
+     padding-right: 10px;
+ }
+ 
+ .modal-body{
+     position: relative;  
+     text-align: center;
+}
+
+ .modal-body img{
+    width: 80px;
+ }
+
+
 
 /* SECONDARY CONTAINER */
 .secondary{
@@ -404,7 +485,7 @@ header {
     transition: 0.5s;
 }
 
-button {
+.order-form button {
     width: 100px;
     background: #00bcd4;
     color: #fff;
@@ -431,3 +512,4 @@ button {
         width: 100%;
     }
 }
+

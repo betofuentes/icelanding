@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICE-LANDING</title>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="./js/index.js"></script>
     <link rel="shortcut icon" href="./assets/icons/icon.ico">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -92,7 +91,7 @@
             <div class="proofs-events__items">
                 <img src="./assets/icons/palnorte.png" alt="PalNorte_Logo">
             </div>
-
+            
         <div class="proofs-establishments">
             <p>Y con la confianza de establecimientos como:</p>
             <div class="proofs-establishments__items">
@@ -102,7 +101,35 @@
             </div>
         </div>
 
+        <button class="open" id="open">Botón de ejemplo</button>
+
         </section>
+
+        
+
+        <div id="myModal" class="modal">
+            <div class="flex" id="flex">
+                <div class="modal-content">
+                    <div class="modal-header flex">
+                        <h3>Otras referencias:</h3>
+                        <p class="modal-header__close" id="close">&times;</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./assets/icons/modelorama.png" alt="logo">
+                        <img src="./assets/icons/modelorama.png" alt="logo">
+                        <img src="./assets/icons/modelorama.png" alt="logo">
+                        <img src="./assets/icons/modelorama.png" alt="logo">
+                        <img src="./assets/icons/modelorama.png" alt="logo">
+                        <img src="./assets/icons/modelorama.png" alt="logo">
+                        <img src="./assets/icons/modelorama.png" alt="logo">
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <p>Hielo del poniente &copy;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <section class="orders">
             <!-- <p>Pedidos al</p>
@@ -196,6 +223,9 @@
                   x.style.display = "block";
                 }
             }
+
+        
     </script>
+    <script type="text/javascript" src="./js/index.js"></script>
 </body>
 </html>
