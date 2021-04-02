@@ -109,7 +109,7 @@ header {
 
 .intro button{
     width: 250px;
-    margin-top: 50px;
+    margin-top: auto 10px auto 10px;
     padding: 15px 0 15px 0;
     border-radius: 5px;
     box-shadow: 1px 5px 10px rgb(6, 28, 56);
@@ -121,7 +121,7 @@ header {
 }
 
 .intro p{
-    margin: 60px 10px auto 10px;
+    margin: auto 10px auto 10px;
     font-size: 1.4rem;
 }
 
@@ -266,9 +266,11 @@ header {
 
 /* SECONDARY CONTAINER */
 .secondary{
+    min-width: 30%;
     display: flex;
     flex-direction: column;
 }
+
 /* MAP SECTION */
 .map{
     width: 100%;
@@ -312,6 +314,7 @@ header {
 
 .contenedor {
     width: 100%;
+    min-width: 320px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -354,7 +357,7 @@ header {
 }
 
 .order-form {
-    width: 50%;
+    width: 60%;
     padding: 10px;
     background: #fff;
 }
