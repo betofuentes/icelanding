@@ -152,6 +152,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 
 .contacto .contenido {
@@ -190,9 +191,9 @@ header {
     display: flex;
 }
 
-.contenedor .contactoInfo .box .icon {
-    min-width: 60px;
-    height: 60px;
+.contenedor .contactoInfo .box img {
+    min-width: 30px;
+    height: 30px;
     background: #fff;
     display: flex;
     justify-content: center;
@@ -215,7 +216,7 @@ header {
 }
 
 .order-form {
-    width: 40%;
+    width: 50%;
     padding: 40px;
     background: #fff;
 }
@@ -274,28 +275,18 @@ button {
     display: block;
     float: right;
 }
-/*
-.select {
-    width: auto;
-    border: 1px solid #3F51B5;
-    border-radius: 3px;
-    padding: 3px 5px;
-    font-size: 15px;
-    cursor: pointer;
-    line-height: 1.1;
-    display: grid;
-}
 
-
-button {
-    appearance:none;
-    -webkit-appearance:none;
-    padding:10px;
-    border:none;
-    background-color:#3F51B5;
-    color:#fff;
-    font-weight:600;
-    border-radius:5px;
-    width:50%;
-    margin-left: right;
+@media (max-width: 991px) {
+    .contacto {
+        padding: 50px;
+    }
+    .contenedor {
+        flex-direction: column;
+    }
+    .contenedor .contactoInfo {
+        margin-bottom: 40px;
+    }
+    .contenedor .contactoInfo, .order-form {
+        width: 100%;
+    }
 }
