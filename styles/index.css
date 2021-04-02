@@ -110,9 +110,6 @@ header {
 .intro p{
     margin: auto 10px auto 10px;
     font-size: 1.4rem;
-    overflow-y: scroll;
-    overscroll-behavior-y: contain;
-    scroll-snap-type: y proximity;
 }
 
 /* -- SECCIÓN DE PRODUCTOS --*/
@@ -165,11 +162,33 @@ header {
     box-shadow: 0 4px 8px rgba(0,0,0,0.16);
 }
 
-.product-detail--image {
+.product-detail--image{
     margin-right: 10px;
-    width: 100px;
-    height: 100px;
-    border: 3px solid black;
+    min-width: 130px;
+    min-height: 130px;
+    border-radius: 5px;
+    background: oldlace;
+}
+
+.barra {
+    background-image: url("../assets/fotos/barras.jfif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.tritu {
+    background-image: url("../assets/fotos/tritu.jfif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bolsita {
+    background-image: url("../assets/fotos/bolsita.jfif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.costal {
+    background-image: url("../assets/fotos/costal.jfif");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .product-description-container {
@@ -236,7 +255,7 @@ header {
 .contacto {
     position: relative;
     min-height: 200px;
-    padding: 50px 100px;
+    padding: 5px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -306,7 +325,7 @@ header {
 
 .order-form {
     width: 50%;
-    padding: 40px;
+    padding: 10px;
     background: #fff;
 }
 
@@ -324,7 +343,7 @@ header {
 
 .order-form .inputBox input, .order-form .inputBox textarea {
     width: 100%;
-    padding: 5px 0;
+    padding: 30px 0;
     font-size: 16px;
     margin: 10px 0;
     border: none;
@@ -367,7 +386,7 @@ button {
 
 @media (max-width: 991px) {
     .contacto {
-        padding: 50px;
+        padding: 5px;
     }
     .contenedor {
         flex-direction: column;
