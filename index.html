@@ -49,9 +49,11 @@
             </div>
             <section class="product-cards--container">
                 <article class="product-detail--card">
-                    <span class="product-detail--image"></span>
-                    <p class="product-detail--card-title"></p>
-                    <p class="product-detail--card-body"></p>
+                    <span class="product-detail--image">Imagen</span>
+                    <div class="product-description-container">
+                        <p class="product-detail--card-title">Barra de 150 kilogramos</p>
+                        <p class="product-detail--card-body">Principalmente utilizada para enfriar hieleras con capacidad para 200 botellas de 355 ml. </p>
+                    </div>
                 </article>
             </section>
         </section>
@@ -88,7 +90,7 @@
         <section class="order-form">
             <form name="data" method="post">
                 <section>
-                    <h2>Información de contacto</h2>
+                    <h2>¡Contactanos!</h2>
         
                     <p>
                     <label for="name">
@@ -119,30 +121,30 @@
                         <span>¿Qué es lo que deseas comentar?</span>
                     </label>
                     <br>
-                    <textarea id="body" name="comentarios" rows="5" cols="60" required></textarea>
+                    <textarea id="body" name="comentarios" rows="5" cols="30" required></textarea>
                     </p>
 
                 </section>
 
-                <fieldset>
+                <fieldset class="formulario">
                     <legend>Razón de contacto</legend>
                     <ul type="none">
                         <li>
                             <label for="R1">
                             <input type="radio" id="id_razon" name="razon" value="COTIZACIÓN" >
-                            Cotización
-                            </label>
+                            <span>Cotización</span>
+                        </label>
                         </li>
                         <li>
                             <label for="R2">
                             <input type="radio" id="id_razon" name="razon" value="INFORMES">
-                            Informes
+                            <span>Informes</span>
                             </label>
                         </li>
                         <li>
                             <label for="R3">
                             <input type="radio" id="id_razon" name="razon" value="QUEJA">
-                            Quejas
+                            <span>Quejas</span>
                             </label>
                         </li>
                     </ul>
