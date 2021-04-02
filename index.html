@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICE-LANDING</title>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="./js/index.js"></script>
     <link rel="shortcut icon" href="./assets/icons/icon.ico">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -94,7 +93,7 @@
                 <img src="./assets/icons/zombie-fest.png" alt="ZombieFest_Logo">
                 <img src="./assets/icons/live-out.png" alt="LiveOut_Logo">
             </div>
-
+            
         <div class="proofs-establishments">
             <p>Y con la confianza de establecimientos como:</p>
             <div class="proofs-establishments__items">
@@ -104,7 +103,32 @@
             </div>
         </div>
 
+        <button class="open" id="open">Botón de ejemplo</button>
+
         </section>
+
+        
+
+        <div id="myModal" class="modal">
+            <div class="flex" id="flex">
+                <div class="modal-content">
+                    <div class="modal-header flex">
+                        <h3>Otras referencias:</h3>
+                        <p class="modal-header__close" id="close">&times;</p>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./assets/icons/modal/cabuland-fest.png" alt="CabulandFest_Logo">
+                        <img src="./assets/icons/modal/food-truck-fest.png" alt="FoodTruckFest_Logo">
+                        <img src="./assets/icons/modal/hellow-fest.png" alt="HellowFest_Logo">
+                        <img src="./assets/icons/modal/machaca-fest.png" alt="MachacaFest_Logo">
+                        <img src="./assets/icons/modal/miller grill.png" alt="MillerGrill_Logo">
+                        <img src="./assets/icons/modal/miller-high-life.png" alt="MillerHighLife_Logo">
+                        <img src="./assets/icons/modal/wish-fest.png" alt="WishFest_Logo">
+                        <img src="./assets/icons/modal/skafest.png" alt="SkaFest_Logo">
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <section class="orders">
             <!-- <p>Pedidos al</p>
@@ -198,6 +222,9 @@
                   x.style.display = "block";
                 }
             }
+
+        
     </script>
+    <script type="text/javascript" src="./js/index.js"></script>
 </body>
 </html>

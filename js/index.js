@@ -1,3 +1,27 @@
+// Modal actions
+let modal = document.getElementById('myModal');
+let flex = document.getElementById('flex');
+let open = document.getElementById('open');
+let close = document.getElementById('close');
+
+// To open
+open.addEventListener('click', function(){
+    modal.style.display = 'block';
+});
+
+// To close
+close.addEventListener('click', function(){
+    modal.style.display = 'none';
+});
+
+// To close clicking out of modal
+window.addEventListener('click', function(e){
+    console.log(e.target);
+    if(e.target == flex){
+        modal.style.display = 'none';
+    }
+});
+
  function check_email(email){
 	var pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"; 
 	 if(email.value.match(pattern))
@@ -29,3 +53,6 @@
 		message => alert("¡El correo ha sido mandado exitosamente! En breve nos pondremos en contacto con usted.")
 	);
 }
+
+
+
