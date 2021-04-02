@@ -144,7 +144,6 @@ header {
     line-height: 1.8rem;
     color: #808080;
 }
-<<<<<<< HEAD
 .contacto {
     position: relative;
     min-height: 200px;
@@ -290,7 +289,6 @@ button {
     .contenedor .contactoInfo, .order-form {
         width: 100%;
     }
-=======
 
 .proofs{
   position: relative;
@@ -331,5 +329,4 @@ button {
 .proofs-establishments img{
     width: 110px;
     padding: 0px 5px 15px 5px;
->>>>>>> dd16699902a1ab0bf03c215e2e7725c9a7f91823
 }
