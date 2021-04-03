@@ -44,7 +44,8 @@ header {
 }
 
 .nav-right--item{
-    display: flex;
+    flex-direction: column;
+    justify-content: center;
     list-style: none;
     width: 90%;
     
@@ -55,8 +56,12 @@ header {
 }
 
 .nav-item--link{
+    text-align: center;
+    width: 200px;
+    padding: 0 auto;
     margin: 0 auto;
 }
+
 
 .nav-item--link a{
     font-size: 2rem;
