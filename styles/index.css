@@ -289,6 +289,10 @@ header {
      background-color: #666;
  }
 
+
+ .fade {
+      data-aos-once: "false"
+ }
  /* MODAL */
 .flex{
     width: 100%;
@@ -450,7 +454,7 @@ left: 10px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    width: 100%;
 }
 
 .contacto .contenido {
