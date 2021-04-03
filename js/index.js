@@ -42,9 +42,12 @@ window.addEventListener('click', function(e){
 	var client_number = document.getElementById("client_number").value;
 
 	Email.send({
-	Host: "smtp.gmail.com",
+	SecureToken: "94b3d474-f479-4237-a3b1-91246a619ef1",
+	/*Host: "smtp.gmail.com",
 	Username : "6f.valdez.rodarte.miguel@gmail.com",
-	Password : "Hola123456!",
+	Password : "Hola123456!", 
+	TODO: rEEMPLAZAR POR CREDENCIALES REALES AL FINAL
+	*/
 	To : 'mike.281299@gmail.com',
 	From : "6f.valdez.rodarte.miguel@gmail.com",
 	Subject : "[" + reason + "] " + name + " desea ponerse en contacto con usted.",
