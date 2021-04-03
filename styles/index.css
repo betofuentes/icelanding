@@ -291,11 +291,17 @@ header {
      background-color: #666;
  }
 
-
  .fade {
       data-aos-once: "false"
  }
  /* MODAL */
+
+.buttonmodal button {
+    text-align: center;
+    width: 30%;
+    background-color: #2e3766 !important;
+}
+
 .flex{
     width: 100%;
     height: 100%;
