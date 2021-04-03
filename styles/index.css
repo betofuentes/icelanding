@@ -298,8 +298,9 @@ header {
 
 .buttonmodal button {
     text-align: center;
-    width: 30%;
+    width: 95px;
     background-color: #2e3766 !important;
+    border-radius: 250px !important;
 }
 
 .flex{
