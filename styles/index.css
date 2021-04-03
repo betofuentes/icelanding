@@ -10,7 +10,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+body {
+    overflow-x: hidden;
+}
 html {
     font-family: 'DM Sans', sans-serif;
     font-size: 62.5%;
