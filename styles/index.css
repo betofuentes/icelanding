@@ -384,6 +384,16 @@ header {
     position: relative;
 }
 
+.slider-header{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-header h3{
+    font-size: 1.8rem;
+    color: white;
+}
 /* 100% for each image added, eg. 30 images = 3000% */
 .slider{
     display: flex;
