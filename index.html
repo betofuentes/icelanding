@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -43,34 +45,34 @@
             <a href="#Form"><button>¡Ordena ya!</button></a>
         </section>
         <section id="Products" class="main-product-detail">
-            <div class="product-detail--title">
+            <div class="product-detail--title" data-aos="fade-down" data-aos-duration="3000">
                 <h2>Manejamos productos de calidad.</h2>
                 <p>Confiables para consumo humano y enfriamiento de bebidas.</p>
             </div>
             <section class="product-cards--container">
-                <article class="product-detail--card">
+                <article class="product-detail--card" data-aos="fade-down" data-aos-duration="2000">
                     <span class="product-detail--image barra"></span>
                     <div class="product-description-container">
                         <p class="product-detail--card-title">Barra de 150 kilogramos</p>
                         <p class="product-detail--card-body">Principalmente utilizada para enfriar hieleras con capacidad para 200 botellas de 355 ml. </p>
                     </div>
                 </article>
-                <article class="product-detail--card">
+                <article class="product-detail--card" data-aos="fade-down" data-aos-duration="2000">
                     <span class="product-detail--image tritu"></span>
                     <div class="product-description-container">
                         <p class="product-detail--card-title">Costal Triturado</p>
                         <p class="product-detail--card-body">Su uso es muy similar al de la barra de 150kg, la diferencia es que este producto ya esta listo para vaciar en una hielera. </p>
                     </div>
                 </article>
-                <article class="product-detail--card">
+                <article class="product-detail--card" data-aos="fade-down" data-aos-duration="2000">
                     <span class="product-detail--image costal"></span>
                     <div class="product-description-container">
                         <p class="product-detail--card-title">Costal de hielo cilindrico</p>
                         <p class="product-detail--card-body">Si vas a tener una evento o reunión necesitarás contar con mucho hielo para enfriar las bebidas de tus invitados.</p>
                     </div>
                 </article>
-                <article class="product-detail--card">
-                    <span class="product-detail--image bolsita"></span>
+                <article class="product-detail--card" data-aos="fade-down" data-aos-duration="2000">
+                    <span class="product-detail--image bolsita" ></span>
                     <div class="product-description-container">
                         <p class="product-detail--card-title">Bolsa de hielo cilindrico</p>
                         <p class="product-detail--card-body">Se utiliza generalmente para enfriar tu bebida en vaso.</p>
@@ -80,13 +82,13 @@
         </section>
 
         <!-- Proofs section for testimonials or references -->
-        <section class="proofs">
+        <section class="proofs" >
 
             <div class="proofs-header">
                 <h2>Referencias</h2>
             </div>
 
-      <div class="proofs-events">
+      <div class="proofs-events" data-aos="fade-in" data-aos-duration="1000" data-aos-once="true">
             <p>Contamos con experiencia en eventos como:</p>
             <div class="proofs-events__items">
                 <img src="./assets/icons/palnorte.png" alt="PalNorte_Logo">
@@ -102,8 +104,13 @@
                 <img src="./assets/icons/modelorama.png" alt="Modelorama_Logo">
             </div>
         </div>
-
-        <button class="open" id="open">Botón de ejemplo</button>
+        
+        <section class="buttonmodal">
+            <button class="open" id="open">
+                Ver más  
+                <i class="fa fa-truck"></i>
+            </button>
+        </section>
 
         </section>
 
@@ -215,7 +222,7 @@
                 
                 </div>
 
-                    <div class="order-form" id="Form">
+                    <div class="order-form" id="Form" data-aos="fade-in" data-aos-duration="900" data-aos-once="true">
                         <form name="data" method="post">
                             <h2>Información de contacto</h2>
 
@@ -269,5 +276,10 @@
         
     </script>
     <script type="text/javascript" src="./js/index.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
