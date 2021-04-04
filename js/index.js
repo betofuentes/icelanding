@@ -14,6 +14,13 @@ close.addEventListener('click', function(){
     modal.style.display = 'none';
 });
 
+window.addEventListener('click', function(e){
+	console.log(e.target)
+	if (e.target == flex) {
+		modal.style.display = 'none';
+	}
+});
+
 // Slider actions
 const slider = document.querySelector("#slider");
 let sliderSection = document.querySelectorAll(".slider__section");
