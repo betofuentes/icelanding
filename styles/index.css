@@ -297,7 +297,7 @@ header {
  }
 
  .fade {
-      data-aos-once: "false"
+      data-aos-once: "false";
  }
  /* MODAL */
 
@@ -499,19 +499,25 @@ left: 10px;
 .contenedor .contactoInfo {
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
 .contenedor .contactoInfo .box {
+    width: 95%;
+    margin: 5px 0;
+    background: #eeeeee;
     position: relative;
-    padding: 20px 0;
+    border-radius: 5px;
+    padding: 20px 20px;
     display: flex;
 }
 
 .contenedor .contactoInfo .box img {
     min-width: 30px;
     height: 30px;
-    background: #fff;
+    background: #eeeeee;
     display: flex;
     justify-content: center;
     align-items: center;
