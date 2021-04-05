@@ -3,11 +3,17 @@
     justify-content: center;
     align-items: center;
     background-image: url("../assets/icons/icecubes.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .proofs {
     width: 900px;
     background-image: none;
+}
+
+.container-slider {
+    background: none;
 }
 
 .orders {
