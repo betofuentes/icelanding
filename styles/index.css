@@ -103,6 +103,7 @@ header {
     width: 130px;
 }
 .intro h1 {
+    max-width: 700px;
     width: 95%;
     padding: 10px;
     margin: 0 auto;
@@ -329,6 +330,7 @@ header {
  }
  
  .modal-content{
+     max-width: 700px;
      position: relative;
      background-color: white;
      margin: auto;
