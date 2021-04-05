@@ -395,11 +395,15 @@ header {
 
 /* SLIDER SECTION */
 .container-slider{
-    width: 100%;
+    justify-content: center;
+    margin: 10px auto;
+    width: 90%;
     min-width: 320px;
-    margin: auto;
+    max-width: 800px;
     overflow: hidden;
     position: relative;
+    border-radius: 10px;
+    background: linear-gradient(207.8deg, var(--blanquito) 16.69%, var(--azulito) 100%);
 }
 
 .slider-header{
