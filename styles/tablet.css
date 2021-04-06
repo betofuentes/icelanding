@@ -10,3 +10,27 @@
     left: 90%;
     top: 30px;
 }
+
+.topnav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.topnav .nav-right .icon{
+    display: none;
+}
+
+.topnav #myLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav-item--link{
+    width: auto;
+    padding: 0 10px;
+}
+
+.logo img{
+    margin-left: 40px;
+}
