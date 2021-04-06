@@ -178,6 +178,16 @@ header {
     color: #808080;
 }
 
+.haccp {
+    margin: 0 auto;
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.haccp img{
+    width: 100%;
+}
 .product-detail--card{
     display: flex;
     justify-content: space-around;
