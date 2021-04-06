@@ -4,3 +4,9 @@
     width: 930px;
     margin: 0 auto;
 }
+
+.haccp{
+    position: absolute;
+    left: 90%;
+    top: 30px;
+}
