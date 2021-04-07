@@ -280,6 +280,12 @@ header {
     font-weight: 700;
 }
 
+.proofs-events__items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .proofs-events img{
     width: 110px;
     padding: 0px 5px 15px 5px;
