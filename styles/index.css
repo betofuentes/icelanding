@@ -677,3 +677,19 @@ select:hover {
     }
 }
 
+/* -- FOOTER --*/
+footer {
+    width: 100vw;
+    height: 150px;
+    background: var(--warm-black);
+}
+
+.footer-main-container{
+    width: 100%;
+    height: 80%;
+}
+
+.footer-bottom{
+    font-size: 1.4rem;
+    color: white;
+}
