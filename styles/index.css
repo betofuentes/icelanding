@@ -417,13 +417,11 @@ header {
 /* SLIDER SECTION */
 .container-slider{
     justify-content: center;
-    margin: 10px auto;
-    width: 90%;
+    margin: 0 auto;
     min-width: 320px;
     max-width: 800px;
     overflow: hidden;
     position: relative;
-    border-radius: 10px;
     background: linear-gradient(207.8deg, var(--blanquito) 16.69%, var(--azulito) 100%);
 }
 
