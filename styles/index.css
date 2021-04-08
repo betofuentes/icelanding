@@ -282,6 +282,7 @@ header {
 
 .proofs-events__items{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -302,8 +303,9 @@ header {
 }
  
  .proofs button{
-     margin: 20px;
-     padding: 10px 5px 10px 5px;
+     width: 100px;
+     margin-bottom: 20px;
+     padding: 10px;
      border-radius: 7px;
      color: white;
      background-color: var(--warm-black);
@@ -323,9 +325,11 @@ header {
 
 .buttonmodal button {
     text-align: center;
-    width: 95px;
-    background-color: #2e3766 !important;
-    border-radius: 250px !important;
+    width: 100px;
+    font-weight: bold;
+    background-color: #00bcd4 !important;
+    border-radius: 5px !important;
+    box-shadow: 1px 5px 10px rgba(6,28,56,0.16);
 }
 
 .flex{
@@ -611,16 +615,19 @@ left: 10px;
 }
 
 .order-form button {
+    font-weight: bold;
     width: 100px;
     background: #00bcd4;
     color: #fff;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
     padding: 10px;
     font-size: 19px;
     margin-top: 10px;
     display: block;
     float: right;
+    box-shadow: 1px 5px 10px rgba(6,28,56,0.16);
 }
 
 .spanSelect {
