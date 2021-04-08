@@ -10,9 +10,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
     overflow-x: hidden;
 }
+
 html {
     font-family: 'DM Sans', sans-serif;
     font-size: 62.5%;
@@ -29,7 +31,7 @@ header {
     background-color: var(--azulito);
 }
 
-.logo img{
+.logo img {
     padding: 5px 0 0 5px;
     width: 120px;
 }
@@ -45,19 +47,19 @@ header {
     display: none;
 }
 
-.nav-right--item{
+.nav-right--item {
     flex-direction: column;
     justify-content: center;
     list-style: none;
     width: 90%;
-    
+
 }
 
-.nav-item--link:hover{
-    background-color: #365964 ;
+.nav-item--link:hover {
+    background-color: #365964;
 }
 
-.nav-item--link{
+.nav-item--link {
     text-align: center;
     width: 200px;
     padding: 0 auto;
@@ -65,7 +67,7 @@ header {
 }
 
 
-.nav-item--link a{
+.nav-item--link a {
     font-size: 2rem;
     color: white;
     text-decoration: none;
@@ -85,7 +87,7 @@ header {
     border-radius: 2px;
     box-shadow: 0px 3px rgba(38, 79, 133, 0.16);
 }
-  
+
 .intro {
     position: relative;
     display: flex;
@@ -99,9 +101,10 @@ header {
     background: linear-gradient(207.8deg, var(--blanquito) 16.69%, var(--azulito) 100%);
 }
 
-.intro img{
+.intro img {
     width: 130px;
 }
+
 .intro h1 {
     max-width: 700px;
     width: 95%;
@@ -112,10 +115,10 @@ header {
     font-weight: bold;
     font-size: 2.4rem;
     border-radius: 10px;
-    box-shadow: 1px 5px 50px rgba(43, 45, 75,0.25);
+    box-shadow: 1px 5px 50px rgba(43, 45, 75, 0.25);
 }
 
-.intro button{
+.intro button {
     width: 100px;
     background: #00bcd4;
     color: #fff;
@@ -134,11 +137,11 @@ header {
     font-weight: bold;
 }
 
-.intro button:hover{
+.intro button:hover {
     background-color: #365964;
 }
 
-.intro p{
+.intro p {
     margin: auto 10px auto 10px;
     font-size: 1.4rem;
 }
@@ -156,7 +159,8 @@ header {
 .product-detail--title {
     width: 90%;
     min-width: 288px;
-    height: auto;/*El mismo texto delimita el crecimiento*/
+    height: auto;
+    /*El mismo texto delimita el crecimiento*/
     margin: 0 auto;
     margin-top: 50px;
     text-align: center;
@@ -188,10 +192,11 @@ header {
     height: 100px;
 }
 
-.haccp img{
+.haccp img {
     width: 100%;
 }
-.product-detail--card{
+
+.product-detail--card {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -203,10 +208,10 @@ header {
     padding: 15px;
     background: #282623;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.16);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 }
 
-.product-detail--image{
+.product-detail--image {
     margin-right: 10px;
     min-width: 130px;
     min-height: 130px;
@@ -219,16 +224,19 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .tritu {
     background-image: url("../assets/fotos/tritu.jfif");
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .bolsita {
     background-image: url("../assets/fotos/bolsita.jfif");
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .costal {
     background-image: url("../assets/fotos/costal.jfif");
     background-size: cover;
@@ -246,6 +254,7 @@ header {
     line-height: 1.8rem;
     color: white;
 }
+
 .product-detail--card-body {
     font-size: 1.8rem;
     font-weight: 500;
@@ -254,18 +263,18 @@ header {
 }
 
 /* -- SECCIÓN DE REFERENCIAS -- */
-.proofs{
-  position: relative;
-  width: 100%;
-  min-width: 320px;  
-  height: auto;
-  text-align: center;
-  background-image: url("../assets/icons/icecubes.jfif");
-  background-size: cover;
-  color: black;
+.proofs {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    text-align: center;
+    background-image: url("../assets/icons/icecubes.jfif");
+    background-size: cover;
+    color: black;
 }
 
-.proofs-header{
+.proofs-header {
     padding-top: 20px;
 }
 
@@ -274,7 +283,7 @@ header {
     font-size: 2rem;
 }
 
-.proofs-events p{
+.proofs-events p {
     font-size: 1.8rem;
     margin-bottom: 10px;
     font-weight: 700;
@@ -292,35 +301,36 @@ header {
     padding: 0px 5px 15px 5px;
 }
 
-.proofs-establishments p{
+.proofs-establishments p {
     font-size: 1.8rem;
     margin-bottom: 10px;
 }
 
-.proofs-establishments img{
+.proofs-establishments img {
     width: 110px;
     padding: 0px 5px 15px 5px;
 }
- 
- .proofs button{
-     margin: 20px;
-     padding: 10px 5px 10px 5px;
-     border-radius: 7px;
-     color: white;
-     background-color: var(--warm-black);
-     border-style: none;
-     cursor: pointer;
-     transition-duration: .5s;
- }
 
- .proofs button:hover{
-     background-color: #666;
- }
+.proofs button {
+    margin: 20px;
+    padding: 10px 5px 10px 5px;
+    border-radius: 7px;
+    color: white;
+    background-color: var(--warm-black);
+    border-style: none;
+    cursor: pointer;
+    transition-duration: .5s;
+}
 
- .fade {
-      data-aos-once: "false";
- }
- /* MODAL */
+.proofs button:hover {
+    background-color: #666;
+}
+
+.fade {
+    data-aos-once: "false";
+}
+
+/* MODAL */
 
 .buttonmodal button {
     text-align: center;
@@ -329,86 +339,94 @@ header {
     border-radius: 250px !important;
 }
 
-.flex{
+.flex {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center; 
- }
- 
- .modal{
-     display: none;
-     position: fixed;
-     z-index:1;
-     overflow: auto;
-     left: 0;
-     top: 0;
-     width: 100%;
-     height: 100%;
-     background-color: rgba(0, 0, 0, 0.493);
- }
- 
- .modal-content{
-     max-width: 700px;
-     position: relative;
-     background-color: white;
-     margin: auto;
-     width: 90%;
-     height: auto;
-     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 4);
-     animation-name: modal;
-     animation-duration: 1s;
- }
- 
- @keyframes modal {
-     from{top: -330px; opacity: 0;}
-     to{top:0; opacity: 1;}
- }
- 
- .modal-header{
-  background-color: #747677;
- }
-
- .modal-header h3{
-     margin-left: 10px;
-     color: white;
-     font-size: 1.7rem;
- }
- 
- .modal-header__close{
-    color: white;
-     font-weight: bold;
-     font-size: 2.7rem;
-     cursor: pointer;
-     padding-right: 10px;
- }
- 
- .modal-body{
-     position: relative;  
-     text-align: center;
-     margin: 10px 0 10px 0;
+    align-items: center;
 }
 
- .modal-body img{
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.493);
+}
+
+.modal-content {
+    max-width: 700px;
+    position: relative;
+    background-color: white;
+    margin: auto;
+    width: 90%;
+    height: auto;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 4);
+    animation-name: modal;
+    animation-duration: 1s;
+}
+
+@keyframes modal {
+    from {
+        top: -330px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.modal-header {
+    background-color: #747677;
+}
+
+.modal-header h3 {
+    margin-left: 10px;
+    color: white;
+    font-size: 1.7rem;
+}
+
+.modal-header__close {
+    color: white;
+    font-weight: bold;
+    font-size: 2.7rem;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.modal-body {
+    position: relative;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+.modal-body img {
     width: 70px;
     margin: 8px;
- }
+}
 
 
 /* SECONDARY CONTAINER */
-.secondary{
+.secondary {
     min-width: 30%;
     display: flex;
     flex-direction: column;
 }
 
 /* MAP SECTION */
-.map{
+.map {
     width: 100%;
     height: auto;
 }
-.map iframe{
+
+.map iframe {
     width: 100%;
     height: 300px;
     border-style: none;
@@ -416,7 +434,7 @@ header {
 }
 
 /* SLIDER SECTION */
-.container-slider{
+.container-slider {
     justify-content: center;
     margin: 10px auto;
     width: 90%;
@@ -428,29 +446,30 @@ header {
     background: linear-gradient(207.8deg, var(--blanquito) 16.69%, var(--azulito) 100%);
 }
 
-.slider-header{
+.slider-header {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.slider-header h3{
+.slider-header h3 {
     font-size: 1.8rem;
     color: white;
 }
+
 /* 100% for each image added, eg. 30 images = 3000% */
-.slider{
+.slider {
     display: flex;
     width: 500%;
     height: 400px;
     margin-left: -100%;
 }
 
-.slider__section{
+.slider__section {
     width: 100%;
 }
 
-.slider__img{
+.slider__img {
     display: block;
     width: 100%;
     height: 100%;
@@ -458,7 +477,7 @@ header {
     border-radius: 5px;
 }
 
-.slider__btn{
+.slider__btn {
     position: absolute;
     width: 40px;
     height: 40px;
@@ -473,22 +492,23 @@ header {
     transition-duration: .5s;
 }
 
-.slider__btn:hover{
+.slider__btn:hover {
     background-color: var(--warm-black);
     color: white;
 }
 
-.slider__btn--left{
-left: 10px;
+.slider__btn--left {
+    left: 10px;
 }
 
-.slider__btn--right{
- right: 10px;
+.slider__btn--right {
+    right: 10px;
 }
 
 /* -- SECCIÓN DE FORMULARIO -- */
 .contacto {
-    /*position: absolute;*/ /*Creo que esto esta causando un scroll horizontal*/
+    /*position: absolute;*/
+    /*Creo que esto esta causando un scroll horizontal*/
     min-height: 200px;
     padding: 5px 20px;
     display: flex;
@@ -560,7 +580,7 @@ left: 10px;
     font-weight: 300;
 }
 
-.contenedor .contactoInfo .box .text h3{
+.contenedor .contactoInfo .box .text h3 {
     font-weight: 300;
     color: var(--azulito);
 }
@@ -583,7 +603,8 @@ left: 10px;
     margin-top: 10px;
 }
 
-.order-form .inputBox input, .order-form .inputBox textarea {
+.order-form .inputBox input,
+.order-form .inputBox textarea {
     width: 100%;
     padding: 30px 0;
     font-size: 16px;
@@ -659,8 +680,8 @@ select:hover {
     z-index: 1;
     transform: translateY(0%);
     transition-delay: 0s,
-    0s,
-    0.3s;
+        0s,
+        0.3s;
 }
 
 .select option {
@@ -673,13 +694,17 @@ select:hover {
     .contacto {
         padding: 5px;
     }
+
     .contenedor {
         flex-direction: column;
     }
+
     .contenedor .contactoInfo {
         margin-bottom: 5px;
     }
-    .contenedor .contactoInfo, .order-form {
+
+    .contenedor .contactoInfo,
+    .order-form {
         width: 100%;
     }
 }
@@ -691,12 +716,12 @@ footer {
     background: var(--warm-black);
 }
 
-.footer-main-container{
+.footer-main-container {
     width: 100%;
     height: 80%;
 }
 
-.footer-bottom{
+.footer-bottom {
     font-size: 1.4rem;
     color: white;
 }
