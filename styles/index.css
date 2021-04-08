@@ -91,12 +91,13 @@ header {
 .intro {
     position: relative;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
     align-content: center;
     width: 100%;
     min-width: 320px;
-    height: 420px;
+    min-height: 485px;
     text-align: center;
     background: linear-gradient(207.8deg, var(--blanquito) 16.69%, var(--azulito) 100%);
 }
@@ -128,7 +129,7 @@ header {
     position: absolute;
     left: calc(50% - 125px);
     width: 250px;
-    top: 400px;
+    top: 460px;
     padding: 15px 10px 15px 10px;
     border-radius: 5px;
     box-shadow: 1px 5px 10px rgb(6, 28, 56);
@@ -142,8 +143,8 @@ header {
 }
 
 .intro p {
+    margin: 20px 0 30px 0;
     max-width: 700px;
-    margin: 15px 10px auto 10px;
     font-size: 1.4rem;
 }
 
