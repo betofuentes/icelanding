@@ -145,7 +145,7 @@ header {
 .intro p {
     margin: 20px 0 30px 0;
     max-width: 700px;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
 
 /* -- SECCIÓN DE PRODUCTOS --*/
@@ -181,7 +181,7 @@ header {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-weight: 500;
     line-height: 1.8rem;
     color: #808080;
@@ -240,7 +240,7 @@ header {
 }
 
 .costal {
-    background-image: url("../assets/fotos/costal.jfif");
+    background-image: url("../assets/fotos/hielo-cilindrico.jfif");
     background-size: cover;
     background-repeat: no-repeat;
 }
