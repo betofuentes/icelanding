@@ -109,7 +109,7 @@ header {
     min-width: 320px;
     min-height: 485px;
     text-align: center;
-    background: linear-gradient(207.8deg, var(--blanquito) 16.69%, var(--azulito) 100%);
+    background: linear-gradient(180deg, var(--blanquito) 16.69%, var(--azulito) 100%);
 }
 
 .intro img {
@@ -130,8 +130,8 @@ header {
 }
 
 .intro button {
-    width: 100px;
     background: #00bcd4;
+    top: 520px;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -139,7 +139,6 @@ header {
     position: absolute;
     left: calc(50% - 125px);
     width: 250px;
-    top: 460px;
     padding: 15px 10px 15px 10px;
     border-radius: 5px;
     box-shadow: 1px 5px 10px rgb(6, 28, 56);
@@ -165,7 +164,7 @@ header {
     min-width: 320px;
     height: auto;
     padding: 20px 10px;
-    background-color: var(--warm-black);
+    background-color: #71a0b0;
 }
 
 .product-detail--title {
@@ -218,6 +217,7 @@ header {
     margin: 15px auto;
     padding: 15px;
     background: #282623;
+    /* background: radial-gradient(circle, rgba(0,188,212,1) 0%, rgba(40,38,35,1) 100%); */
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 }
