@@ -178,10 +178,10 @@ header {
 }
 
 .product-detail--title h2 {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     font-weight: bold;
     line-height: 2.6rem;
-    color: white;
+    color: #303030;
 }
 
 .product-detail--title p {
@@ -192,7 +192,7 @@ header {
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 1.8rem;
-    color: #808080;
+    color: #303030;
 }
 
 .haccp {
