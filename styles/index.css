@@ -21,6 +21,16 @@ html {
     scroll-behavior: smooth;
 }
 
+h2{
+    font-size: 2.8rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+}
+
+p{
+    font-size: 1.8rem;
+}
+
 header {
     width: 100%;
     min-width: 320px
@@ -170,7 +180,6 @@ header {
 
 .product-detail--title h2 {
     margin-bottom: 20px;
-    font-size: 2rem;
     font-weight: bold;
     line-height: 2.6rem;
     color: white;
@@ -282,7 +291,6 @@ header {
 
 .proofs-header h2 {
     margin-bottom: 10px;
-    font-size: 2rem;
 }
 
 .proofs-events p {
@@ -526,7 +534,7 @@ header {
 }
 
 .contacto .contenido h2 {
-    font-size: 30px;
+    margin: 30px 0;
     font-weight: bold;
     color: black;
 }
@@ -647,8 +655,8 @@ header {
     padding: 10px;
     font-size: 19px;
     margin-top: 10px;
+    margin: 10px auto 0 auto;
     display: block;
-    float: right;
     box-shadow: 1px 5px 10px rgba(6,28,56,0.16);
 }
 
@@ -741,17 +749,43 @@ select:hover {
 
 /* -- FOOTER --*/
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
+    padding: 0 20%;
     height: 150px;
     background: var(--warm-black);
-}
-
-.footer-main-container {
-    width: 100%;
-    height: 80%;
 }
 
 .footer-bottom {
     font-size: 1.4rem;
     color: white;
 }
+
+/* Lista de usos de hielo */
+.products-use-container {
+    border-top: 10px solid var(--warm-black);
+    border-bottom: 10px solid var(--warm-black);
+    width: 100%;
+    min-width: 320px;
+    height: 530px;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #ccd7dc, #b6c9d1, #9fbbc6, #89adbb, #71a0b0);
+    font-size: 1.8rem;
+}
+
+.products-use-container .item-title{
+    text-align: center;
+    margin:20px auto;
+}
+
+.products-use-container ul li{
+    margin-bottom: 20px;
+}
+
+
