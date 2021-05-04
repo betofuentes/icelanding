@@ -131,7 +131,8 @@ header {
 
 .intro button {
     background: #00bcd4;
-    top: 520px;
+    /* top: 520px; */
+    top: auto;
     color: #fff;
     border: none;
     cursor: pointer;
