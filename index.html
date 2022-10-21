@@ -4,12 +4,350 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICE-LANDING</title>
+    <meta name="description" content="Proveedor de hielo en Santa Catarina, Apodaca, San Nicolas, Escobedo, Monterrey, Guadalupe y Saltillo. Distribuidor de hielo con más de 30 años de experiencia. Hielo en barra, hielo en bolsa y hielo triturado.">
+    <title>Hielo del Poniente</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="shortcut icon" href="./assets/icons/icon.ico">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/tablet.css" media="(min-width: 930px)">
+    <link rel="stylesheet" href="./styles/desktop.css" media="(min-width: 1024px)">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
-    <form method="post">
-        <input type="button" value="Enviar correo" onclick="sendEmail()" />
-    </form>
+    <header>
+        <nav class="topnav">
+            <div class="nav-left">
+                <figure class="logo">
+                    <img src="./assets/icons/slogo.png" alt="Logo_Hielo">
+                </figure>
+            </div>
+            <!-- Navigation links -->
+            <div class="nav-right">
+                <ul class="nav-right--item" id="myLinks">
+                    <li class="nav-item--link"><a href="#Intro">Inicio</a></li>
+                    <li class="nav-item--link"><a href="#Products">Productos</a></li>
+                    <li class="nav-item--link"><a href="#proofs">Referencias</a></li>
+                    <li class="nav-item--link"><a href="#Contact">Contacto</a></li>
+                </ul>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="bars-solid"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id ="Intro" class="intro">
+
+            <img src="./assets/icons/logo.png" alt="Logo de Hielo del Poniente, principal distribuidor de hielo norteño">
+
+            <h1>Somos el distribuidor de hielo número uno en cuanto a distribución y eventos se trata.</h1>
+                <p>Contamos con más de 30 años de experiencia en el mercado.  Ofrecemos venta de hielo en barra, hielo triturado y hielo cilíndrico. Con capacidad para abastecer desde una reunión familiar hasta eventos masivos. Siempre brindando la mejor atención posible para satisfacer las necesidades de nuestros clientes.</p>
+            <a href="#Form"><button>¡Ordena ya!</button></a>
+        </section>
+        <section id="Products" class="main-product-detail">
+            <div class="product-detail--title">
+                <h2>Manejamos productos de calidad.</h2>
+                <p>Confiables para consumo humano y enfriamiento de bebidas. Nuestos productos cumplen con la certificación HACPP, la cuál avala que no existe ningún  peligro que puedan comprometer la inocuidad de los alimentos.</p>
+                <figure class="haccp">
+                    <img src="./assets/icons/haccp_certified.png" alt="Sello de certificación HACCP">
+                </figure>
+            </div>
+            <section class="product-cards--container">
+                <article class="product-detail--card" data-aos="fade-down" data-aos-duration="2000">
+                    <span class="product-detail--image barra"></span>
+                    <div class="product-description-container">
+
+                        <p class="product-detail--card-title">Barra de hielo 150 kilogramos</p>
+
+                        <p class="product-detail--card-body">Barra de hielo para enfriamiento.</p>
+                        <p class="product-detail--card-body">Barras para figuras de hielo.</p>
+
+                    </div>
+                </article>
+                <article class="product-detail--card" data-aos="fade-down" data-aos-duration="2000">
+                    <span class="product-detail--image tritu"></span>
+                    <div class="product-description-container">
+
+                        <p class="product-detail--card-title">Costal de hielo triturado</p>
+
+                        <p class="product-detail--card-body">Su uso es muy similar al de la barra de 150kg, la diferencia es que este producto ya está listo para vaciar en una hielera. </p>
+
+                    </div>
+                </article>
+                <article class="product-detail--card hielo-cilindrico" data-aos="fade-down" data-aos-duration="2000">
+                    <span class="product-detail--image costal"></span>
+                    <div class="product-description-container">
+                        <p class="product-detail--card-title">Hielo cilindrico purificado presentación 5kg y 20kg</p>
+
+                        <p class="product-detail--card-body">Para consumo humano. Para enfriamiento de bebidas y/o hidratación de personal.</p>
+
+                    </div>
+                </article>
+                <!-- <article class="product-detail--card" data-aos="fade-down" data-aos-duration="2000">
+                    <span class="product-detail--image bolsita" ></span>
+                    <div class="product-description-container">
+                        <p class="product-detail--card-title">Hielo cilindrico purificado presentación 5kg</p>
+                        <p class="product-detail--card-body">Se utiliza generalmente para enfriar tu bebida en vaso.</p>
+                    </div>
+                </article> -->
+            </section>
+        </section>
+
+        <!-- Proofs section for testimonials or references -->
+        <div class="sections-container">
+            <section id="proofs" class="proofs">
+                
+                <div class="proofs-header" data-aos="fade-in" data-aos-duration="1000" data-aos-once="true">
+
+                    <!-- <h2>Referencias de distribuciones en las que hemos participado</h2> -->
+
+                </div>
+                
+                <div class="proofs-events" data-aos="fade-in" data-aos-duration="1000" data-aos-once="true">
+                    <p>Contamos con experiencia en eventos como:</p>
+                    <div class="proofs-events__items">
+                        <img src="./assets/icons/palnorte.png" alt="Logo de Pal Norte, evento en el que Hielos del Poniente ha sido distribuidor">
+                        <img src="./assets/icons/modal/hellow-fest.png" alt="Logo de Hellow Fest evento en el que Hielos del Poniente ha sido distribuidor">
+                        <img src="./assets/icons/modal/machaca-fest.png" alt="Logo de Machaca Fest evento en el que Hielos del Poniente ha sido distribuidor">
+                        <img src="./assets/icons/live-out.png" alt="Logo de Live Out, evento en el que Hielos del Poniente ha sido distribuidor">
+                    </div>
+                    
+                    <div class="proofs-establishments">
+                        <p>Y con la distribución y confianza de establecimientos como:</p>
+                        <div class="proofs-establishments__items">
+                            <img src="./assets/icons/oxxo.png" alt="Logo de oxxo, establecimiento que maneja Hielos del Poniente">
+                            <img src="./assets/icons/six.png" alt="Logo de oxxo, establecimiento que maneja Hielos del Poniente">
+                            <img src="./assets/icons/modelorama.png" alt="Logo de oxxo, establecimiento que maneja Hielos del Poniente">
+                        </div>
+                    </div>
+                    
+                    <section class="buttonmodal">
+                        <button class="open" id="open">
+                            Ver más  
+                            <i class="fa fa-truck"></i>
+                        </button>
+                    </section>
+                    
+                </section>
+                
+                
+                
+                <div id="myModal" class="modal">
+                    <div class="flex" id="flex">
+                        <div class="modal-content">
+                            <div class="modal-header flex">
+
+                                <h3>Otras referencias en las que hemos participado:</h3>
+
+                                <p class="modal-header__close" id="close">&times;</p>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./assets/icons/modal/cielo-magico.png" alt="Logo de Cielo Magico, evento en el que Hielos del Poniente ha sido distribuidor">
+                                
+                                <img src="./assets/icons/modal/food-truck-fest.png" alt="Logo de Food Truck Fest, evento en el que Hielos del Poniente ha sido distribuidor">
+                                <img src="./assets/icons/zombie-fest.png" alt="Logo de Zombie Fest, evento en el que Hielos del Poniente ha sido distribuidor">
+                                <img src="./assets/icons/modal/miller grill.png" alt="Logo de Miller Grill, evento en el que Hielos del Poniente ha sido distribuidor">
+                                <img src="./assets/icons/modal/mother-rock-fest.png" alt="Logo de Mother Rock Fest, evento en el que Hielos del Poniente ha sido distribuidor">
+                                <img src="./assets/icons/modal/miller-high-life.png" alt="Logo de MillerHighLife, evento en el que Hielos del Poniente ha sido distribuidor">
+                                <img src="./assets/icons/modal/wish-fest.png" alt="Logo de Wish Fest, evento en el que Hielos del Poniente ha sido distribuidor">
+                                <img src="./assets/icons/modal/skafest.png" alt="Logo de Ska Fest, evento en el que Hielos del Poniente ha sido distribuidor">
+                                <img src="./assets/icons/modal/festival-de-la-cerveza.png" alt="Logo de Festival De La Cerveza, evento en el que Hielos del Poniente ha sido distribuidor">
+                                <img src="./assets/icons/modal/burger-fest.png" alt="Logo de Burger Fest, evento en el que Hielos del Poniente ha sido distribuidor">
+                                <img src="./assets/icons/modal/cabuland-fest.png" alt="Logo de Cabuland Fest, evento en el que Hielos del Poniente ha sido distribuidor">
+                                <img src="./assets/icons/modal/encabritados-fest.png" alt="Logo de Encabritados Fest, evento en el que Hielos del Poniente ha sido distribuidor">
+                                <img src="./assets/icons/modal/northside-fest-2.png" alt="Logo de NorthSide Fest, evento en el que Hielos del Poniente ha sido distribuidor">
+                                <img src="./assets/icons/modal/metal fest.png" alt="Logo de Metal Fest, evento en el que Hielos del Poniente ha sido distribuidor">
+                                <img src="./assets/icons/modal/iris-beer-fest.png" alt="Logo de Irish Beer Fest, evento en el que Hielos del Poniente ha sido distribuidor">
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <section class="orders">    
+                    <!-- <p>Pedidos al</p>
+                        <h1>(81)0000-0000 y (81)0000-0000</h1>
+                        <p>Llamanos!</p> -->
+                    </section>
+                    
+                    <section class="container-slider">
+                        <div class="slider-header">
+                            <!-- <h3>Textito uwu</h3> -->
+                        </div>
+                        <div class="slider" id="slider">
+                            <div class="slider__section">
+                                <img src="./assets/fotos/entrega_tkt.png" alt="Imagen de entrega cerveza Tecate" class="slider__img">
+                            </div> 
+                            
+                            <div class="slider__section">
+                                <img src="./assets/fotos/entrega_modelo.png" alt="Imagen de entrega cerveza Modelo" class="slider__img">
+                            </div> 
+                            
+                            <div class="slider__section">
+                                <img src="./assets/fotos/hielera_corona.png" alt="Imagen de entrega cerveza Corona" class="slider__img">
+                            </div> 
+                            
+                            <div class="slider__section">
+                                <img src="./assets/fotos/386e3896-fbb6-4c47-9a35-59efcdd8dc97.jfif" alt="Fotografía establecimiento y materiales de Hielo del Poniente" class="slider__img">
+                            </div> 
+                            
+                            <div class="slider__section">
+                                <img src="./assets/fotos/29c2c493-0dba-451d-a35a-72dfd5580434.jfif" alt="Fotografía de establecimiento y movilidad de Hielo del Poniente" class="slider__img">
+                            </div> 
+                            
+                            <div class="slider__btn slider__btn--right" id="btn-right">></div>
+                            <div class="slider__btn slider__btn--left" id="btn-left"><</div>
+                            
+                        </section>
+        </div>
+        
+        <section class="products-use-container">
+                <div class="item-title">
+                    <h2> Uso de nuestros productos</h1>
+                </div>
+                <div class="item list-1">
+                    <ul>
+                        <li><strong>Eventos:</strong> Bodas, XV años, reuniones familiares, hasta eventos masivos.</li>
+                        <li><strong>Industria:</strong> Hidratación de personal.</li>
+                        <li><strong>Conservación de alimentos:</strong> Para carnes, frutas, vegetales y mariscos.</li>
+                        <li><strong>Comercio al por menor:</strong> Abarrotes, escuelas, hoteles, moteles, etc.</li>
+                    </ul>
+                    <ul>
+                        <li><strong>Restaurantes y bares.</strong></li>
+                        <li><strong>Casinos.</strong></li>
+                        <li><strong>Cines.</strong></li>
+                        <li><strong>Clubs deportivos.</strong></li>
+                    </ul>
+                </div>
+        </section>
+        
+        <section id="Contact" class="contacto">
+                <div class="contenido">
+                    <h2>¡Contáctanos para tu negocio!</h2>
+                    <p>Estaremos contentos de ponernos en contacto contigo brevemente. Estás en buenas manos.</p>
+            </div>
+            <div class="contenedor">
+                <div class="secondary">
+                    <div class="contactoInfo">
+                    <div class="box">
+                        <div class="icon"><img src="./assets/icons/email.svg" alt="Encargado de Hielo del Poniente"></div>
+                        <div class="text">
+                            <h3>Lo atiende</h3>
+                            <p>Alejandro Hernández Villanueva</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon"><img src="./assets/icons/phone.svg" alt="Teléfno para contacto personal con Hielo del Poniente"></div>
+                        <div class="text">
+                            <h3>Teléfono</h3>
+                            <p>81 1365 9507</p>
+                            <p>81 1516 2157</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><img src="./assets/icons/location.svg" alt="Localización de bodega de Hielo del Poniente"></div>
+                        <div class="text">
+                            <h3>Dirección del establecimiento</h3>
+                            <p>Mercado de Abastos, Bodega No. 95</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Map section -->
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115049.9034752067!2d-100.48696499106165!3d25.69417530429728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629841d84a11a9%3A0x74452c27bb51c7c3!2sMercado%20de%20Abastos%20Poniente!5e0!3m2!1ses!2smx!4v1617388280666!5m2!1ses!2smx" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                
+                </div>
+
+                    <div class="order-form" id="Form" data-aos="fade-in" data-aos-duration="900" data-aos-once="true">
+                        <form name="data" method="post">
+                            <h2>Información de contacto para negocio o aclaración de dudas</h2>
+
+                            <label for="name" class="inputBox">
+                                <input type="text" id="name" name="username" required="required" placeholder="Nombre">
+                               
+                            </label>
+
+                            <label for="client_email" class="inputBox">
+                                <input type="email" id="client_email" name="client_mail" placeholder="Correo electrónico ">
+                            </label>
+
+
+                            <label for="client_number" class="inputBox">
+                                <input type="text" id="client_number" name="client_number" maxlength="11" placeholder="Número de contacto">
+                            </label>
+
+                            <label for="body" class="inputBox">
+                                <textarea id="body" name="comentarios" rows="5" cols="60" required placeholder="¿Qué es lo que deseas comentar?"></textarea>
+                            </label>
+
+                            <label for="razon" class="spanSelect">
+                                <span>Razón de contacto</span>
+                                <select class="select" name="razon" id="id_razon">
+                                    <option disabled selected>Escoger</option>
+                                    <option value="COTIZACIÓN">Cotización</option>
+                                    <option value="INFORMES">Informes</option>
+                                    <option value="QUEJA">Quejas</option>
+                                </select>
+                            </label>
+                            <button type="button" value="Enviar " onclick="check_email(document.data.client_mail)">Enviar</button>
+                        </form>
+                    </div>
+            </div>
+            
+        </section>
+
+        
+        <!-- botón whatsapp -->
+        <a href="https://api.whatsapp.com/send?phone=528120013273&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n." class="float" target="_blank">
+            <i class="fa fa-whatsapp my-float"></i>
+            </a>
+
+    </main>
+
+    <footer>
+        <div class="footer-main-container">
+
+        </div>
+        <div class="footer-bottom">
+            <p>Hielo del Poniente 2021</p>
+        </div>
+    </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "flex"){
+                 x.style.display = "none";
+                 } else {
+                  x.style.display = "flex";
+                }
+            }
+
+        
+    </script>
+    <script type="text/javascript" src="./js/index.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-198519093-1">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-198519093-1');
+    </script>
 </body>
 </html>
